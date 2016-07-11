@@ -7,6 +7,6 @@
    * [Network.r](r/network_r.md)
 * [Javascript](javascript/javascript.md)
    * [Common.js](javascript/common_js.md)
-   * TimeCounter.js
+   * [TimeCounter.js](javascript/timecounter_js.md)
 * [Perl](perl/perl.md)
 
