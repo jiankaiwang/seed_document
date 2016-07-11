@@ -38,5 +38,20 @@ Date addDays(Date getDate, var getDays)
 Date addHours(Date getDate, var getHours)
 ```
 
+* The date after adding several minutes to the specific date (針對某一時刻加上數分鐘後的日期時間)
+
+```javascript
+Date addMinutes(Date getDate, var getMinutes)
+```
+
+* The date after adding several seconds to the specific date (針對某一時刻加上數秒鐘後的日期時間)
+
+```javascript
+Date addSeconds(Date getDate, var getSeconds)
+```
+
+
+
+
 
 
