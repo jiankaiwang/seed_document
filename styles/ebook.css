@@ -7,3 +7,8 @@ table thead tr, table thead tr th {
     color: white; 
     font-weight: bold;
 }
+img {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
