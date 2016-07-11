@@ -1,3 +1,8 @@
-# My Awesome Book
+# seed project
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+* Provide libraries or packages for the software development in multiple programming languages.
+
+### Github
+---
+
+* github repository : [https://github.com/jiankaiwang/seed](https://github.com/jiankaiwang/seed)
