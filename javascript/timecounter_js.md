@@ -86,8 +86,29 @@ var getCrtMinute(Date getDate)
 var getCrtSecond(Date getDate)
 ```
 
+* Get the current day (取得今日星期)
 
+```javascript
+// return: 0 - 6
+var getCrtDay(Date getDate)
+```
 
+* Get the current day by alpha (取得今日星期，以英文縮寫回傳)
 
+```javascript
+// return: "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+var getCrtAlphaDay(Date getDate)
+```
 
+* Set year, month and date (設定年月日)
+
+```javascript
+Date setYearMonthDate(Date getDate, var getYMD)
+```
+
+* set hour, minute and second (設定時分秒)
+
+```javascript
+Date setHourMinuteSecond(Date getDate, var getHMS)
+```
 
