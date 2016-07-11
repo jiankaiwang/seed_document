@@ -9,3 +9,8 @@ Provide libraries or packages for the software development in multiple programmi
 ### Main Referenced Resource
 ---
 
+* R
+
+* Javascript
+
+* Perl
