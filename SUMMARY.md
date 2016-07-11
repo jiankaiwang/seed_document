@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Useful Resource](useful_resource.md)
 * [R](r/r.md)
-   * Network.r
+   * [Network.r](r/network_r.md)
 * [Javascript](javascript/javascript.md)
 * [Perl](perl/perl.md)
 
