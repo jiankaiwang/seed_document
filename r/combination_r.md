@@ -1,5 +1,7 @@
 # Combination.r
 
+<script type="text/javascript" src="../js/general.js"></script>
+
 * count all combinations without the permutation (計算不考慮排列下所有組合的數目)
 
 ```R
