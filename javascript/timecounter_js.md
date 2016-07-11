@@ -32,7 +32,11 @@ Date currentDateAddSeconds(var addSeconds)
 Date addDays(Date getDate, var getDays)
 ```
 
-* 
+* The date after adding several hours to the specific date (針對某一時刻加上數小時後的日期時間)
+
+```javascript
+Date addHours(Date getDate, var getHours)
+```
 
 
 
