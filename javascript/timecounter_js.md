@@ -19,3 +19,9 @@ Date currentDateAddHours(var addHours)
 ```javascript
 Date currentDateAddMinutes(var addMinutes)
 ```
+
+* The date after adding several seconds (加上數秒鐘後的日期時間)
+
+```javascript
+Date currentDateAddSeconds(var addSeconds)
+```
