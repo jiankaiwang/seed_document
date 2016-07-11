@@ -6,5 +6,6 @@
    * [Combination.r](r/combination_r.md)
    * [Network.r](r/network_r.md)
 * [Javascript](javascript/javascript.md)
+   * Common.js
 * [Perl](perl/perl.md)
 
