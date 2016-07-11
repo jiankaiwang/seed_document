@@ -5,3 +5,7 @@ Provide libraries or packages for the software development in multiple programmi
 ### Github
 
 * github repository : [https://github.com/jiankaiwang/seed](https://github.com/jiankaiwang/seed)
+
+### Main Referenced Resource
+---
+
