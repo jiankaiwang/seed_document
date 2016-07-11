@@ -4,5 +4,5 @@
 * [Useful Resource](useful_resource.md)
 * [R](r/r.md)
 * [Javascript](javascript/javascript.md)
-* Perl
+* [Perl](perl/perl.md)
 
