@@ -25,3 +25,14 @@ Date currentDateAddMinutes(var addMinutes)
 ```javascript
 Date currentDateAddSeconds(var addSeconds)
 ```
+
+* The date after adding several days to the specific date (針對某一時刻加上數日後的日期時間)
+
+```javascript
+Date addDays(Date getDate, var getDays)
+```
+
+* 
+
+
+
