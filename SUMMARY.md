@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Useful Resource](useful_resource.md)
-* R
+* [R](r/r.md)
 
