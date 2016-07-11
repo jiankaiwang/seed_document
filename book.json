@@ -1,1 +1,24 @@
-{}
+{
+    "plugins" : [ "include-highlight","mathjax","autocover","include-codeblock","addcssjs" ],  
+    "pluginsConfig": {
+        "autocover": {
+              "title": "IT and IoT System",
+              "author": "J.K. Wang",
+              "font": {
+                  "size": null,
+                  "family": "Impact",
+                  "color": "#000"
+              },
+              "size": {
+                  "w": 1800,
+                  "h": 2360
+              },
+              "background": {
+                  "color": "#FFF"
+              }
+        }
+    },
+    "addcssjs": {
+      "js": ["js/general.js"]
+    }
+}
