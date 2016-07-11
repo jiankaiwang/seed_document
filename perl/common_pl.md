@@ -8,7 +8,7 @@
 int existInList($element, @list)
 ```
 
-* get the order index of element in the list (元素於串列中的索引位置)
+* get the order index of element in the list (元素於串列中的索引順序)
 
 ```Perl
 int indexOfList($element, @list)
