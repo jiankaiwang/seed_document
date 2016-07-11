@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* Useful Resource
+* [Useful Resource](useful_resource.md)
 
