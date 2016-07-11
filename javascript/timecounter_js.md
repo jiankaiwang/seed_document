@@ -62,11 +62,29 @@ var getCrtYear(Date getDate)
 var getCrtMonth(Date getDate)
 ```
 
+* Get the current date (取得今日日期)
 
+```javascript
+var getCrtDate(Date getDate)
+```
 
+* Get the current hour (取得現在幾時)
 
+```javascript
+var getCrtHour(Date getDate)
+```
 
+* Get the current minute (取得現在幾分)
 
+```javascript
+var getCrtMinute(Date getDate)
+```
+
+* Get the current second (取得現在幾秒)
+
+```javascript
+var getCrtSecond(Date getDate)
+```
 
 
 
