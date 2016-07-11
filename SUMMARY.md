@@ -9,5 +9,5 @@
    * [Common.js](javascript/common_js.md)
    * [TimeCounter.js](javascript/timecounter_js.md)
 * [Perl](perl/perl.md)
-   * Common.pl
+   * [Common.pl](perl/common_pl.md)
 
