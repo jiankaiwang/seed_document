@@ -50,6 +50,24 @@ Date addMinutes(Date getDate, var getMinutes)
 Date addSeconds(Date getDate, var getSeconds)
 ```
 
+* Get the current year (取得今日年份)
+
+```javascript
+var getCrtYear(Date getDate)
+```
+
+* Get the current month (取得今日月份)
+
+```javascript
+var getCrtMonth(Date getDate)
+```
+
+
+
+
+
+
+
 
 
 
