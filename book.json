@@ -2,7 +2,7 @@
     "plugins" : [ "include-highlight","mathjax","autocover","include-codeblock","addcssjs" ],  
     "pluginsConfig": {
         "autocover": {
-              "title": "IT and IoT System",
+              "title": "Seed",
               "author": "J.K. Wang",
               "font": {
                   "size": null,
