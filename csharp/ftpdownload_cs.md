@@ -83,7 +83,7 @@ if (ftpStatus == 0) {
 }
 ```
 
-* Example.2 : download file in detailed setting
+* Example.2 : download file in detailed settings
 
 ```
 FTPDownload fd = new FTPDownload("user","pwd", "ftp://xyz:8020/file.txt", "C:/Users/user1/Desktop/example.txt", 10, true);
