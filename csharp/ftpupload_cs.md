@@ -55,6 +55,22 @@ public FTPUpload(
 )
 ```
 
+* start to upload through FTP (開始 FTP 上傳)
+
+```csharp
+// ------------------------------
+// startFTPUpload()
+// desc : main entry to upload FTP file
+// ret :
+// -1 : local file does not exist
+// -2 : upload setting is not correct
+// -3 : can not access the ftp server or upload path did not exist
+// -4 : upload is not complete
+// -5 : checksum is not the same
+// ------------------------------    
+public int startFTPUpload()
+```
+
 ### API Example
 ---
 
