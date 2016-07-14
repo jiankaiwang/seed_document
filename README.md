@@ -9,10 +9,7 @@ Provide libraries or packages for the software development in multiple programmi
 ### Supported languages list
 ---
 
-* R
-
-* Javascript
-
-* Perl
-
-* Csharp
+* Scientific : R
+* Webpage : Javascript
+* Dynamic : Perl
+* Static : Csharp
