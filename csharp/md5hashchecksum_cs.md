@@ -6,4 +6,6 @@
 
 ```csharp
 public MD5HashChecksum()
+public MD5HashChecksum(String template)
+public MD5HashChecksum(String template, String compare)
 ```
