@@ -6,7 +6,7 @@ Provide libraries or packages for the software development in multiple programmi
 
 * github repository : [https://github.com/jiankaiwang/seed](https://github.com/jiankaiwang/seed)
 
-### Main Referenced Resource
+### Supported languages list
 ---
 
 * R
