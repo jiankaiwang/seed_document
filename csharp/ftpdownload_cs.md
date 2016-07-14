@@ -44,3 +44,27 @@ public FTPDownload(
   bool dwnFileFlag
 )
 ```
+
+* start to down file from a ftp server (開始自 FTP 伺服器下載資料)
+
+```
+// ------------------------------
+// startFTPDownload()
+// desc : main entry to download FTP file
+// ret :
+// -1 : ftp basic setting is not prepared
+// -2 : ftp client can not login the server or file did not exist
+// -3 : ftp download is not complete
+// -4 : file exists but is can not be written
+// -5 : file did not exist or file can not be created
+// ------------------------------
+public int startFTPDownload()
+```
+
+* get the content of downloaded file (取得 ftp 下載資料內容)
+
+```
+public String getFTPData()
+```
+
+
