@@ -70,4 +70,28 @@ public int startFTPDownload()
 public String getFTPData()
 ```
 
+### API Example
+---
+
+* Example.1 : get the content of downloaded file 
+
+```
+FTPDownload fd = new FTPDownload("user","pwd", "ftp://xyz:8020/file.txt");
+int ftpStatus = fd.startFTPDownload();
+if (ftpStatus == 0) {
+    Console.WriteLine(fd.getFTPData());
+}
+```
+
+* Example.2 : download file in detailed setting
+
+```
+FTPDownload fd = new FTPDownload("user","pwd", "ftp://xyz:8020/file.txt", "C:/Users/user1/Desktop/example.txt", 10, true);
+int ftpStatus = fd.startFTPDownload();
+```
+
+
+
+
+
 
