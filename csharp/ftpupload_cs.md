@@ -6,7 +6,7 @@
 ---
 
 * FTPDownload.cs is necessary
-* 
+* MD5HashChecksum.cs is necessary
 
 ### API description
 ---
