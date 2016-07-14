@@ -2,6 +2,12 @@
 
 <script type="text/javascript" src="../js/general.js"></script>
 
+###API Requirement
+---
+
+* FTPDownload.cs is necessary
+* 
+
 ### API description
 ---
 
