@@ -5,8 +5,8 @@
 ###API Requirement
 ---
 
-* FTPDownload.cs is necessary
-* MD5HashChecksum.cs is necessary
+* [FTPDownload.cs](https://github.com/jiankaiwang/seed/blob/master/csharp/FTPDownload.cs) is necessary
+* [MD5HashChecksum.cs](https://github.com/jiankaiwang/seed/blob/master/csharp/MD5HashChecksum.cs) is necessary
 
 ### API description
 ---
