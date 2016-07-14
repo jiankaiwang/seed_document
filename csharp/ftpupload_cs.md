@@ -74,3 +74,18 @@ public int startFTPUpload()
 ### API Example
 ---
 
+* Example.1 : upload a string to ftp server
+
+```csharp
+FTPUpload fd = new FTPUpload("user", "pwd", "ftp://xyz:21/example.txt", "Data test", 10, false, true);
+int fdStatus = fd.startFTPUpload();
+Console.WriteLine(String.Format("a{0}", fdStatus));
+```
+
+* Example.2 : upload from a file to ftp server in detailed settings
+
+```csharp
+FTPUpload fd = new FTPUpload("user", "pwd", "ftp://xyz:21/example.txt", "C:/Users/user1/Desktop/example1.txt", true);
+int fdStatus = fd.startFTPUpload();
+Console.WriteLine(String.Format("a{0}", fdStatus));
+```
