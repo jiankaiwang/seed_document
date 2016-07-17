@@ -15,6 +15,6 @@
    * [FTPDownload.cs](csharp/ftpdownload_cs.md)
    * [FTPUpload.cs](csharp/ftpupload_cs.md)
 * [Java](java/java.md)
-   * FTPDownload.java
+   * [FTPDownload.java](java/ftpdownload_java.md)
    * FTPUpload.java
 
