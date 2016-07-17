@@ -55,5 +55,5 @@ System.out.println(String.format("%d", df.checkDirectoryExist()));
 
 ```java
 DirectoryAndFile df = new DirectoryAndFile();
-System.out.println(String.format("%d", df.checkFileExist("C:/Users/JianKaiWang/Desktop/text.txt",true)));
+System.out.println(String.format("%d", df.checkFileExist("C:/Users/user/Desktop/text.txt",true)));
 ```
