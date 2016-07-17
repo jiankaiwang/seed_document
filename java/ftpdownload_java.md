@@ -57,7 +57,9 @@ public String getFTPData()
 * Example.1 : get data content as string
 
 ```Java
-FTPDownload fd = new FTPDownload("host",port,"user","password","file path on the server");
+FTPDownload fd = new FTPDownload(
+  "host", port, "user", "password", "file path on the server"
+  );
 int ftpStatus = fd.startFTPDownload();
 System.out.println(String.format("%s", fd.getFTPData()));
 ```
@@ -65,7 +67,9 @@ System.out.println(String.format("%s", fd.getFTPData()));
 * Example.2 : download as file
 
 ```Java
-FTPDownload fd = new FTPDownload("host",port,"user","password","file path on the server", "file path on the local");
+FTPDownload fd = new FTPDownload(
+  "host", port, "user", "password", "file path on the server", "file path on the local"
+  );
 int ftpStatus = fd.startFTPDownload();
 ```
 
