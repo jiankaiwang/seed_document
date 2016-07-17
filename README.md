@@ -12,4 +12,4 @@ Provide libraries or packages for the software development in multiple programmi
 * Scientific : R
 * Webpage : Javascript
 * Dynamic : Perl
-* Static : Csharp
+* Static : Csharp, Java
