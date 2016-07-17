@@ -11,3 +11,8 @@
 ---
 
 * functions related to FTP upload in java
+
+### DirectoryAndFile.java
+---
+
+* function related to operate directories or files
