@@ -14,8 +14,8 @@ Provide libraries or packages for the software development in multiple programmi
 * Webpage
   * Javascript
 * Dynamic
-  * Perl
+  * Perl : 5.22.1
 * Static
   * C++ : 11
-  * Csharp
+  * Csharp : 4.0 (.NET Framework 4.5.2)
   * Java : jdk1.7.5
