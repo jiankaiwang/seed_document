@@ -12,7 +12,7 @@ Provide libraries or packages for the software development in multiple programmi
 * Scientific
   * R : 3.2.3
 * Webpage
-  * Javascript
+  * Javascript : Chrome 51, Firefox Developer Edition 49
 * Dynamic
   * Perl : 5.22.1
 * Static
