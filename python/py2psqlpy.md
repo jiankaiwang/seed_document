@@ -23,3 +23,42 @@
 def __init__(self, getHost, getPort, getDB, getTB, getUser, getPwd)
 ```
 
+### API
+---
+
+* SELECT operation
+  1. getConds{} : defined where SQL conditions
+  2. getParams [] : selected column names, empty : means all
+  3. asdict : returned row as dictionary data type
+
+```python
+def select(self, getConds, getParams, asdict=False)
+```
+
+* UPDATE operation
+  1. getParams : {}, set sql parameters	
+  2. getConds : {}, where sql conditions
+
+```python
+def update(self, getParams, getConds)
+```
+
+* INSERT operation
+  1. getParams : {}, value sql parameters	
+
+```python
+def insert(self, getParams)
+```
+
+* DELETE operation
+  1. getConds : {}, where sql conditions
+
+```python
+def delete(self, getConds)
+```
+
+
+
+
+
+
