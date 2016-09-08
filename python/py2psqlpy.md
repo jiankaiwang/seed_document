@@ -60,7 +60,27 @@ def delete(self, getConds)
 ### Example
 ---
 
+```python
+# link to postgresql database
+p2l = py2psql("127.0.0.1","5432","ckan_default","public.user","ckan_default","ckan")
 
+# query data and select column name, email, 123 (not existing)
+data = p2l.select({"name":"test114"},["name","email","123"])
+data = p2l.select({"name":"test114"},[])
+
+# query data and select column name, email, 123 (not existing) and also returned as dictionary
+data = p2l.select({"name":"test114"},["name","email","123"],asdict=True)
+data = p2l.select({"name":"test114"},[],asdict=True)
+
+# update data
+p2l.update({"email":"test@tw"},{"name":"test114"})
+
+# insert data
+p2l.insert({ "id" : "acbdhcbdh-abchdbch", "name":"123","email":"123@tw" })
+
+# delete data
+p2l.delete({"name":"test1", "email":"test1@tw"})
+```
 
 
 
