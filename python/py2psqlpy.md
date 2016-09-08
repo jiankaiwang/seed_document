@@ -57,6 +57,9 @@ def insert(self, getParams)
 def delete(self, getConds)
 ```
 
+### Example
+---
+
 
 
 
