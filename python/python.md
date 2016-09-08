@@ -5,4 +5,5 @@
 ### py2psql.py
 ---
 
-*
+* A class implements select, insert, update and delete operations to postgresql.
+* Dependent: psycopg2
