@@ -15,6 +15,7 @@ Provide libraries or packages for the software development in multiple programmi
   * Javascript : Chrome 51, Firefox Developer Edition 49
 * Dynamic
   * Perl : 5.22.1
+  * Python : 2.7.x
 * Static
   * C++ : 11
   * Csharp : 4.0 (.NET Framework 4.5.2)
