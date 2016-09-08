@@ -20,5 +20,5 @@
    * [DirectoryAndFile.java](java/directoryandfile_java.md)
 * [C++](cpp/cpp.md)
    * [common.h](cpp/common_h.md)
-* Python
+* [Python](python/python.md)
 
