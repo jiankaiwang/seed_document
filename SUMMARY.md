@@ -21,4 +21,5 @@
 * [C++](cpp/cpp.md)
    * [common.h](cpp/common_h.md)
 * [Python](python/python.md)
+   * py2psql.py
 
