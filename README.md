@@ -13,6 +13,7 @@ Provide libraries or packages for the software development in multiple programmi
   * R : 3.2.3
 * Webpage
   * Javascript : Chrome 51, Firefox Developer Edition 49
+  * PHP : 5.4.x
 * Dynamic
   * Perl : 5.22.1
   * Python : 2.7.x
