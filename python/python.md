@@ -7,3 +7,9 @@
 
 * A class implements select, insert, update and delete operations to postgresql.
 * Dependent: psycopg2
+
+### REQUESTMETHOD.py
+---
+
+* A class implements sending GET/POST/PUT/DELETE requests and receiving the server responses.
+* Dependent : urllib, urllib2, json
