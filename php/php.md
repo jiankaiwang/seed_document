@@ -6,4 +6,4 @@
 ---
 
 * A REQUESTMETHOD class implements receiving GET/POST/PUT/DELETE requests and responsing as json data.
-* 
+* Collaboration with Python (REQUESTMETHOD.py)
