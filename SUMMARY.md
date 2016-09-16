@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Useful Resource](useful_resource.md)
-   * PHP
 * [R](r/r.md)
    * [Combination.r](r/combination_r.md)
    * [Network.r](r/network_r.md)
@@ -21,6 +20,7 @@
    * [DirectoryAndFile.java](java/directoryandfile_java.md)
 * [C++](cpp/cpp.md)
    * [common.h](cpp/common_h.md)
+* PHP
 * [Python](python/python.md)
    * [py2psql.py](python/py2psqlpy.md)
    * [REQUESTMETHOD.py](python/requestmethodpy.md)
