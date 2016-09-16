@@ -22,5 +22,5 @@
    * [common.h](cpp/common_h.md)
 * [Python](python/python.md)
    * [py2psql.py](python/py2psqlpy.md)
-   * REQUESTMETHOD.py
+   * [REQUESTMETHOD.py](python/requestmethodpy.md)
 
