@@ -2,6 +2,11 @@
 
 <script type="text/javascript" src="../js/general.js"></script>
 
+### Collaboration
+---
+
+* Refer to PHP REQUESTMETHOD.php (class REQUESTMETHOD)
+
 ### Dependency
 ---
 
