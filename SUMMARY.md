@@ -24,5 +24,5 @@
    * [py2psql.py](python/py2psqlpy.md)
    * [REQUESTMETHOD.py](python/requestmethodpy.md)
 * [PHP](php/php.md)
-   * REQUESTMETHOD.php
+   * [REQUESTMETHOD.php](php/requestmethodphp.md)
 
