@@ -2,6 +2,20 @@
 
 <script type="text/javascript" src="../js/general.js"></script>
 
+### Example table
+---
+
+```mysql
+# table example
++---------+-------------+------+-----+---------+----------------+
+| Field   | Type        | Null | Key | Default | Extra          |
++---------+-------------+------+-----+---------+----------------+
+| id      | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(75) | YES  |     | NULL    |                |
+| country | varchar(75) | YES  |     | NULL    |                |
++---------+-------------+------+-----+---------+----------------+
+```
+
 ### Constructor
 ---
 
@@ -18,20 +32,6 @@
 # desc : constructor
 #
 public function __construct($getUrl, $getPort, $getDB, $getTB, $getUser, $getPwd)
-```
-
-### Example table
----
-
-```mysql
-# table example
-+---------+-------------+------+-----+---------+----------------+
-| Field   | Type        | Null | Key | Default | Extra          |
-+---------+-------------+------+-----+---------+----------------+
-| id      | int(11)     | NO   | PRI | NULL    | auto_increment |
-| name    | varchar(75) | YES  |     | NULL    |                |
-| country | varchar(75) | YES  |     | NULL    |                |
-+---------+-------------+------+-----+---------+----------------+
 ```
 
 ### API
