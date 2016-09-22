@@ -69,95 +69,130 @@ def response()
 
 ```python
 # get example
-# ret : {
-#   u'header': {
-#       u'Host': u'192.168.2.5',
-#       u'Connection': u'close',
-#       u'Accept-Encoding': u'identity',
-#       u'User-Agent': u'Python-urllib/2.7'
-#   },
-#   u'host': u'192.168.2.5',
-#   u'response': {u'method': u'get'},
-#   u'uri': u'/test/index.php?method=get',
-#   u'method': u'GET'
+# ret : 
+# {\
+#    'state': 0, \
+#    'response': \
+#        u'{\
+#        "host":"192.168.2.5", \
+#        "uri":"\\/test\\/REQUESTMETHOD.php?1=2&%E4%B8%AD%E6%96%87=%E6%96%B0%E5%A2%9E&method=getData",\
+#        "method":"GET",
+#        "header":{\
+#            "Host":"192.168.2.5",\
+#            "Connection":"keep-alive",\
+#            "Accept-Encoding":"gzip, deflate",\
+#            "Accept":"*\\/*",\
+#            "User-Agent":"python-requests\\/2.8.0"},\
+#            "response":{"1":"2","\\u4e2d\\u6587":"\\u65b0\\u589e","method":"getData"}
+#        }'\
 # }
 #
-a = SENDREQUEST("http://192.168.2.5/test/index.php", {}, {"method" : "get"}, "GET")
-a.response()["response"]
-print json.loads(a.response()["response"])
+a = SENDREQUEST(\
+    "http://192.168.2.5/test/REQUESTMETHOD.php", \
+    {}, \
+    {"method" : "getData", '\xE4\xB8\xAD\xE6\x96\x87' : '\xE6\x96\xB0\xE5\xA2\x9E', 1 : 2}, 
+    "GET"\
+    )
+print a.response()
 ```
 
 * POST Example
 
 ```python
 # post example
-# ret : {
-#   u'header': {
-#       u'Content-Length': u'11',
-#       u'Accept-Encoding': u'identity',
-#       u'Connection': u'close',
-#       u'User-Agent': u'Python-urllib/2.7',
-#       u'Host': u'192.168.2.5', u'Content-Type':
-#       u'application/x-www-form-urlencoded',
-#       u'Authorization': u'api-key'
-#   },
-#   u'host': u'192.168.2.5',
-#   u'response': {u'method': u'post'},
-#   u'uri': u'/test/index.php',
-#   u'method': u'POST'
+# ret :
+# {
+#    'state': 0, \
+#    'response': \
+#        u'{"\
+#            host":"192.168.2.5",\
+#            uri":"\\/test\\/REQUESTMETHOD.php",\
+#            "method":"POST",\
+#            "header":{\
+#                "Host":"192.168.2.5",\
+#                "Content-Length":"53",\
+#                "Accept-Encoding":"gzip, deflate",\
+#                "Accept":"*\\/*",\
+#                "User-Agent":"python-requests\\/2.8.0",\
+#                "Connection":"keep-alive",\
+#                "Content-Type":"application\\/x-www-form-urlencoded",\
+#                "Authorization":"api-key"},\
+#            "response":{"\\u4e2d\\u6587":"\\u65b0\\u589e","method":"postData"}
+#        }'
 # }
 #
-a = SENDREQUEST("http://192.168.2.5/test/index.php", {"Authorization" : "api-key"}, {"method" : "post"},"POST")
-a.response()["response"]
-print json.loads(a.response()["response"])
+b = SENDREQUEST(\
+    "http://192.168.2.5/test/REQUESTMETHOD.php", \
+    {u'Authorization': u'api-key'}, \
+    {"method" : "postData", '\xE4\xB8\xAD\xE6\x96\x87' : '\xE6\x96\xB0\xE5\xA2\x9E'}, \
+    "POST"\
+    )
+print b.response()
 ```
 
 * PUT Example
 
 ```python
 # put example
-# ret : {
-#   u'header': {
-#       u'Content-Length': u'10',
-#       u'Accept-Encoding': u'identity',
-#       u'Connection': u'close',
-#       u'User-Agent': u'Python-urllib/2.7',
-#       u'Host': u'192.168.2.5',
-#       u'Content-Type': u'application/x-www-form-urlencoded',
-#       u'Authorization': u'api-key'
-#   },
-#   u'host': u'192.168.2.5',
-#   u'response': u'method=put',
-#   u'uri': u'/test/index.php',
-#   u'method': u'PUT'
+# ret : 
+# {\
+#    'state': 0, \
+#    'response': \
+#        u'{\
+#            "host":"192.168.2.5",\
+#            "uri":"\\/test\\/REQUESTMETHOD.php",\
+#            "method":"PUT",\
+#            "header":{\
+#                "Host":"192.168.2.5",\
+#                "Content-Length":"10",\
+#                "Accept-Encoding":"gzip, deflate",\
+#                "Accept":"*\\/*",\
+#                "User-Agent":"python-requests\\/2.8.0",\
+#                "Connection":"keep-alive",\
+#                "Content-Type":"application\\/x-www-form-urlencoded",\
+#                "Authorization":"api-key"},
+#            "response":"method=put"
+#        }'
 # }
 #
-a = SENDREQUEST("http://192.168.2.5/test/index.php", {"Authorization" : "api-key"}, {"method" : "put"},"PUT")
-a.response()["response"]
-print json.loads(a.response()["response"])
+c = SENDREQUEST(\
+    "http://192.168.2.5/test/REQUESTMETHOD.php", \
+    {"Authorization" : "api-key"}, \
+    {"method" : "put"}, \
+    "PUT"\
+    )
+print c.response()
 ```
 
 * DELETE Example
 
 ```python
 # delete example
-# ret : {
-#     u'header': {
-#         u'Content-Length': u'13',
-#         u'Accept-Encoding': u'identity',
-#         u'Host': u'192.168.2.5',
-#         u'User-Agent': u'Python-urllib/2.7',
-#         u'Connection': u'close',
-#         u'Content-Type': u'application/x-www-form-urlencoded'
-#     },
-#     u'host': u'192.168.2.5',
-#     u'response':
-#     u'method=delete',
-#     u'uri': u'/test/index.php',
-#     u'method': u'DELETE'
+# ret :
+# {\
+#    'state': 0, \
+#    'response': \
+#        u'{\
+#            "host":"192.168.2.5",\
+#            "uri":"\\/test\\/REQUESTMETHOD.php",\
+#            "method":"DELETE",\
+#            "header":{
+#                "Host":"192.168.2.5",\
+#                "Content-Length":"13",\
+#                "Accept-Encoding":"gzip, deflate",\
+#                "Accept":"*\\/*",\
+#                "User-Agent":"python-requests\\/2.8.0",\
+#                "Connection":"keep-alive",\
+#                "Content-Type":"application\\/x-www-form-urlencoded"},
+#            "response":"method=delete"
+#        }'
 # }
 # 
-a = SENDREQUEST("http://192.168.2.5/test/index.php", {}, {"method" : "delete"},"DELETE")
-a.response()["response"]
-print json.loads(a.response()["response"])
+d = SENDREQUEST(\
+    "http://192.168.2.5/test/REQUESTMETHOD.php", \
+    {}, \
+    {"method" : "delete"}, \
+    "DELETE"\
+    )
+print d.response()
 ```
