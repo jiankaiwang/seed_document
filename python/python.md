@@ -21,3 +21,9 @@
 * A class implements sending GET/POST/PUT/DELETE requests and receiving the server responses.
 * Collaboration with PHP (REQUESTMETHOD.php)
 * Dependent : urllib2, requests
+
+### TEXTCODING.py
+---
+
+* Several methods transform text among different encoding.
+
