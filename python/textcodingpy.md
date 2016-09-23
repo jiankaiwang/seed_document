@@ -11,6 +11,7 @@
 #
 # desc : unicode to utf8 from dictionary
 # retn : a utf8-encoding dictionary
+# example : unicode2utf8FromDict({ u'\u4e3b\u8981' : u'\u4e3b\u8981' }) 
 #
 def unicode2utf8FromDict(getDict)
 ```
