@@ -20,7 +20,7 @@
 
 * A class implements sending GET/POST/PUT/DELETE requests and receiving the server responses.
 * Collaboration with PHP (REQUESTMETHOD.php)
-* Dependent : urllib2, requests
+* Dependent : urllib2, requests, TEXTCODING(also in seed project)
 
 ### TEXTCODING.py
 ---
