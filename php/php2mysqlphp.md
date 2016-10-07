@@ -79,6 +79,22 @@ public function execdelete($getConds)
 public function update($getData, $getConds)
 ```
 
+* advanced SQL : support complex sql command
+
+```php
+#
+# desc : advanced and combined sql command
+# param@sqlCmd : sql command, e.g. 
+# select dm.*, dp.dept_name 
+#   from dept_manager as dm left 
+#     outer join departments as dp on dm.dept_no = dp.dept_no 
+#   where dm.from_date > '1990-01-01'
+#   order by dm.from_date asc;
+# param@existRetData ( is there returned data ? ) : true (yes, select), false (no, insert, delete, update)
+# param@paramDataArray ( parameter-based array for sql ) : e.g. '1990-01-01' is replaced by :from_date, array(':from_date' => $_POST['fd'])
+#
+public function execsql($sqlCmd, $existRetData, $paramDataArray)
+```
 
 ### Example
 ---
@@ -116,4 +132,20 @@ echo "delete : ".$getRes["state"]." ".$getRes["info"]."<br>";
 $obj = new PHP2MySQL("localhost","3306","test","cityData","test01","test01");
 $getRes = $obj -> update(array("country" => "China"), array("name" => "shanghai"));
 echo "update : ".$getRes["state"]." ".$getRes["info"]."<br>";
+```
+
+* execsql example (complicated SQL)
+
+```php
+# only this execsql can not passed table name at the beginning of object created
+$obj = new PHP2MySQL("localhost","3306","employees","","test01","test01");
+$getRes = $obj -> execsql(
+  "select dm.*, dp.dept_name from dept_manager as dm left outer join departments as dp on dm.dept_no = dp.dept_no where dm.from_date > :from_date order by dm.from_date asc;",
+  True,
+  array(':from_date' => '1990-01-01')
+);
+echo "select : ".$getRes["state"]." ".$getRes["info"]."<br>";
+foreach($getRes["data"][0] as $key => $value) {
+    echo $key."->".$value."<br>";
+}
 ```
