@@ -137,7 +137,7 @@ echo "update : ".$getRes["state"]." ".$getRes["info"]."<br>";
 * execsql example (complicated SQL)
 
 ```php
-# only this execsql can not passed table name at the beginning of object created
+# only this function execsql() can not passe table names at the beginning of object created
 $obj = new PHP2MySQL("localhost","3306","employees","","test01","test01");
 $getRes = $obj -> execsql(
   "select dm.*, dp.dept_name from dept_manager as dm left outer join departments as dp on dm.dept_no = dp.dept_no where dm.from_date > :from_date order by dm.from_date asc;",
