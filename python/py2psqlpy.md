@@ -97,22 +97,40 @@ def getTableSchema(self, getTable=None)
 # link to postgresql database
 p2l = py2psql("127.0.0.1","5432","ckan_default","public.user","ckan_default","ckan")
 
+# get table schema
+p2l = py2psql("127.0.0.1","5432","ckan_default","public.user","ckan_default","ckan")
+p2l.getTableSchema()  # default table
+p2l2 = py2psql("127.0.0.1","5432","ckan_default","","ckan_default","ckan")
+p2l2.getTableSchema("public.user")  # desired table
+p2l.status()
+
 # query data and select column name, email, 123 (not existing)
+data = p2l.select({where},[columns])
 data = p2l.select({"name":"test114"},["name","email","123"])
 data = p2l.select({"name":"test114"},[])
 
 # query data and select column name, email, 123 (not existing) and also returned as dictionary
+data = p2l.select({where},[columns],asdict=True)
 data = p2l.select({"name":"test114"},["name","email","123"],asdict=True)
 data = p2l.select({"name":"test114"},[],asdict=True)
 
 # update data
+p2l.update({set},{where})
 p2l.update({"email":"test@tw"},{"name":"test114"})
 
 # insert data
+p2l.insert({ data })
 p2l.insert({ "id" : "acbdhcbdh-abchdbch", "name":"123","email":"123@tw" })
 
 # delete data
+p2l.delete({where})
 p2l.delete({"name":"test1", "email":"test1@tw"})
+
+# execsql data
+# create object without assign table
+p2l.execsql("sql command", is there returned value, {parameter : value})
+p2l.execsql("select * from public.user where name = %(name)s;", True, {'name' : "test114"}, True)
+p2l.status()
 ```
 
 
