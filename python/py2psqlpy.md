@@ -19,42 +19,75 @@
   6. pwd : the password as a string
 
 ```python
-# constructor
-def __init__(self, getHost, getPort, getDB, getTB, getUser, getPwd)
+#
+# desc : constructor
+# param@getTB : can be null when only using execsql()
+#
+def __init__(self, getHost, getPort, getDB, getTB, getUser, getPwd):
 ```
 
 ### API
 ---
 
 * SELECT operation
-  1. getConds{} : defined where SQL conditions
-  2. getParams [] : selected column names, empty : means all
-  3. asdict : returned row as dictionary data type
+  1. param@getConds : {}, defined where SQL conditions
+  2. param@getParams : [], selected column names, empty : means all
+  3. param@asdict : boolean, returned row as dictionary
+  4. data as [] type
+  5. also support status object, use status()
 
 ```python
-def select(self, getConds, getParams, asdict=False)
+def select(self, getConds, getParams, asdict=False):
 ```
 
 * UPDATE operation
-  1. getParams : {}, set sql parameters	
-  2. getConds : {}, where sql conditions
+  1. param@getParams : {}, set sql parameters  
+  2. param@getConds : {}, where sql conditions
+  3. retn : 0 : failure, 1 : success
+  4. note : also support status object, use status()
 
 ```python
 def update(self, getParams, getConds)
 ```
 
 * INSERT operation
-  1. getParams : {}, value sql parameters	
+  1. param@getParams : {}, value sql parameters    
+  2. retn : 0 : failure, 1 : success
+  3. note : also support status object, use status()
 
 ```python
 def insert(self, getParams)
 ```
 
 * DELETE operation
-  1. getConds : {}, where sql conditions
+  1. param@getConds : {}, where sql conditions
+  2. retn : 0 : failure, 1 : success
+  3. note : also support status object, use status()
 
 ```python
 def delete(self, getConds)
+```
+
+* Custom SQL operation
+  1. param@getSQL : parameter-based complex sql command，
+     e.g. "select * from public.user where name = %(name)s;"
+  2. param@hasRetValue : are there returned values ?
+  3. param@getParams : {}
+     e.g. {'name' : "test114"}
+  4. param@asdict : only works when param@hasRetValue is true, returned value as dictionary data type
+  5. retn : return executing status
+
+```python
+def execsql(self, getSQL, hasRetValue, getParams, asdict=True)
+```
+
+* Get Table schema
+  1. param@getTable : get desired table schema
+  2. retn : status object
+  3. note : when param@getTable == None, **self.__tb** must exist at the beginning of object creation
+
+```python
+def getTableSchema(self, getTable=None)
 ```
 
 ### Example
