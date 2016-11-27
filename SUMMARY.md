@@ -20,6 +20,7 @@
    * [DirectoryAndFile.java](java/directoryandfile_java.md)
 * [C++](cpp/cpp.md)
    * [common.h](cpp/common_h.md)
+   * seedalgorithm.h
 * [Python](python/python.md)
    * [py2psql.py](python/py2psqlpy.md)
    * [REQUESTMETHOD.py](python/requestmethodpy.md)
