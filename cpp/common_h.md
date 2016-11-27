@@ -13,6 +13,8 @@
 ### API Description
 ---
 
+* strsplit
+
 ```cpp
 /*
 * namespace : std
