@@ -6,3 +6,4 @@
 ---
 
 * include lots of common used functions
+* strsplit : string is split by delimit words
