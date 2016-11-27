@@ -24,6 +24,7 @@
   int data[] = {1, -1, 2, 5, -3, 5, 7, 9, -10, 10};
   quicksort(data, 0, 10);
 */
+
 void quicksort(int array_data[], int left, int right);
 ```
 
