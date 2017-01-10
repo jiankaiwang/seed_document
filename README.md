@@ -7,6 +7,7 @@ Provide libraries or packages for the software development in multiple programmi
 * github repository : [https://github.com/jiankaiwang/seed](https://github.com/jiankaiwang/seed)
 
 ### Supported languages list
+
 ---
 
 * Scientific
@@ -19,5 +20,8 @@ Provide libraries or packages for the software development in multiple programmi
   * Python : 2.7.x
 * Static
   * C++ : 11
-  * Csharp : 4.0 (.NET Framework 4.5.2)
+  * Csharp : 4.0 \(.NET Framework 4.5.2\)
   * Java : jdk1.7.5
+
+
+
