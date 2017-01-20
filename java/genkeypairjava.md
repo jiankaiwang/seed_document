@@ -48,6 +48,9 @@ public Map<String, String> checkInputParasAvailable()
  * retn :
  * |- state : {success | failure}
  * |- info : information message 
+ * oupt :
+ * |- file : pub.key
+ * |- file : pri.key
  */
 public Map<String, String> generateKeyPairToLocalPath()
 
@@ -71,7 +74,7 @@ GenKeyPair genKP = new GenKeyPair("RSA",2048,true,"D:\\code\\java\\java-mars\\Si
 Map<String, String> genKPRes = genKP.generateKeyPairToLocalPath();
 System.out.println(String.format("%s : %s", genKPRes.get("state"), genKPRes.get("info")));
 
-// Example.2 : 
+// Example.2 : return object containing both public key and private key
 GenKeyPair genDSAKP = new GenKeyPair("DSA",1024,false,"",true);
 Map<String, String> genDSAKPRes = genDSAKP.genKayPairAndReturnedAsPEMString(); 
 System.out.println(String.format("%s : %s", genDSAKPRes.get("state"), genDSAKPRes.get("info")));
