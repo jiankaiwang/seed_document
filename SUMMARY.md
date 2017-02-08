@@ -33,4 +33,5 @@
 * [PHP](php/php.md)
     * [REQUESTMETHOD.php](php/requestmethodphp.md)
     * [PHP2MySQL.php](php/php2mysqlphp.md)
+    * [CRUD.php](php/crudphp.md)
 
