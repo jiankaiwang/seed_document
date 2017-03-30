@@ -8,6 +8,8 @@
 * [Javascript](javascript/javascript.md)
   * [Common.js](javascript/common_js.md)
   * [TimeCounter.js](javascript/timecounter_js.md)
+  * [JqueryExtends.js](javascript/jqueryextendsjs.md)
+  * [network.js](javascript/networkjs.md)
 * [Perl](perl/perl.md)
   * [Common.pl](perl/common_pl.md)
 * [Csharp](csharp/csharp.md)
