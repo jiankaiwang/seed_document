@@ -3,17 +3,20 @@
 Provide libraries or packages for the software development in multiple programming languages.
 
 ### Github
+
 ---
 
 * github repository : [https://github.com/jiankaiwang/seed](https://github.com/jiankaiwang/seed)
 
 ### Supported languages list
+
 ---
 
 * Scientific
   * R : 3.2.3
 * Webpage
   * Javascript : ES6
+  * Typescript : 1.8.9
   * PHP : 5.4.x
 * Dynamic
   * Perl : 5.22.1
@@ -24,6 +27,7 @@ Provide libraries or packages for the software development in multiple programmi
   * Java : jdk1.7.5
 
 ### Seed Modules
+
 ---
 
 * General
@@ -38,6 +42,7 @@ Provide libraries or packages for the software development in multiple programmi
   * hash
   * Asymmetric Encryption
 * Network
+
 * Web
   * Request Method
   * Web API
@@ -45,4 +50,6 @@ Provide libraries or packages for the software development in multiple programmi
 * Database
   * MySQL
   * PostgreSQL
+
+
 
