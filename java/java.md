@@ -16,3 +16,8 @@
 ---
 
 * function related to operate directories or files
+
+### GenKeyPair.java
+---
+
+* generate a Asymmetric Encryption Key Pair

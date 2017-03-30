@@ -2,6 +2,9 @@
 
 <script type="text/javascript" src="../js/general.js"></script>
 
+### API
+---
+
 * The date after adding several days (加上數日後的日期時間)
 
 ```javascript
@@ -111,4 +114,14 @@ Date setYearMonthDate(Date getDate, var getYMD)
 ```javascript
 Date setHourMinuteSecond(Date getDate, var getHMS)
 ```
+
+* format seconds to Day:Hour:Minute:Second
+
+```javascript
+# inpt
+# |- second : total seconds
+# |- format : { format | H, HH, M, MM, S, SS, dd:HH:MM:SS, HH:MM:SS, MM:SS }
+string formatSecond(second, format)
+```
+
 

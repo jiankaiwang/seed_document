@@ -27,3 +27,13 @@
 
 * Several methods transform text among different encoding.
 
+### py2mysql.py
+---
+
+* A class implements select, insert, update and delete operations to mysql.
+* Dependent: mysql.connector
+
+### GoogleSheetsApiByOAuth.py
+---
+
+* related to Google Sheet API (v4) by OAuth
