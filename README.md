@@ -42,7 +42,7 @@ Provide libraries or packages for the software development in multiple programmi
   * hash
   * Asymmetric Encryption
 * Network
-
+  * IPv4 Address upon the mask
 * Web
   * Request Method
   * Web API
