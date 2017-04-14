@@ -21,3 +21,8 @@
 ---
 
 * class related to Google Sheets API (v4)
+
+### Network.cs
+---
+
+* Class related to Network includes subnet validation, etc.
