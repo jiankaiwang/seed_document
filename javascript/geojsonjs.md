@@ -83,9 +83,9 @@ function LeafletPoint2GeojsonPoint(leafletLayer, otherInfo)
 ```javascript
 /*
  * desc : generate line string from a leaflet object 
- * inpt : 
+ * inpt :
  * |- startPoint : { "lat" : 0.0, "lng" : 0.0 }
- * |- endPoint : { "lat" : 0.0, "lng" : 0.0 } 
+ * |- endPoint : { "lat" : 0.0, "lng" : 0.0 }
  * |- otherInfo : { "key" : "value" }
  */
 function LeafletPoint2GeojsonLine(startPoint, endPoint, otherInfo)
