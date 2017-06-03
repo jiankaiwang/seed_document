@@ -22,3 +22,14 @@
 
 * A RangeOfIPv4Addr class implements IPv4 addresses listing by a mask.
 * It is a compiled edition from Typescript/network.ts.
+
+### Geojson.js
+---
+
+* functions are related to GIS and implemented by leaflet.js
+
+
+
+
+
+
