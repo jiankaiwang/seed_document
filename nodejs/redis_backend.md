@@ -19,13 +19,13 @@
 setRedisConf({ "host" : "127.0.0.1", "port" : "6379", "pwd" : "exampleRedisPWD" });
 
 // operation 1-1 : set key-value pair
-setRedisPair("key-1","val-1");
+setRedisPair("key-1", "val-1", function(data) { console.log(data); });
 
 // operation 1-2 : get value by key
-getRedisPair("key-1", function(data) { console.log("callBack function to get value " + data); });
+getRedisPair("key-1", function(data) { console.log(data); });
 
 // operation 1-3 : delete value by key
-delRedisPair("key-1");
+delRedisPair("key-1", function(data) { console.log(data); });
 
 // operation 2 : auto process API
 // GET example : 
