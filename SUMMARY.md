@@ -34,6 +34,7 @@
   * [TEXTCODING.py](python/textcodingpy.md)
   * [py2mysql.py](python/py2mysqlpy.md)
   * [GoogleSheetsApiByOAuth.py](python/googlesheetsapibyoauthpy.md)
+  * [py2sqlserver.py](python/py2sqlserver.md)
 * [PHP](php/php.md)
   * [REQUESTMETHOD.php](php/requestmethodphp.md)
   * [PHP2MySQL.php](php/php2mysqlphp.md)
