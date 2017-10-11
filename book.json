@@ -1,5 +1,5 @@
 {
-    "plugins" : [ "mathjax","autocover","include-codeblock","addcssjs" ],  
+    "plugins" : [ "autocover","addcssjs" ],  
     "pluginsConfig": {
         "autocover": {
               "title": "Seed",
@@ -16,9 +16,9 @@
               "background": {
                   "color": "#FFF"
               }
+        },
+        "addcssjs": {
+              "js": ["js/general.js"]
         }
-    },
-    "addcssjs": {
-      "js": ["js/general.js"]
     }
 }
