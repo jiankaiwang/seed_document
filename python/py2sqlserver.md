@@ -1,6 +1,6 @@
 # py2sqlserver.py
 
-<script type="text/javascript" src="../js/general.js"></script>
+
 
 ### Dependency
 ---
@@ -10,7 +10,7 @@
 ### Constructor
 ---
 
-```py
+```python
 server = 'localhost'
 port = 1433
 database = 'Example'
@@ -25,7 +25,7 @@ py2sqlserver = py2SQLServer(server, port, username, password, database)
 
 * validate whether the connection is existing
 
-```py
+```python
 # params : None
 # return
 # |- state : success or failure
@@ -36,16 +36,25 @@ def validateConnection()
 
 * Query by SQL Command
 
-```py
+```python
 # params : the parameter-based sql command
 # |- sqlCmd (string) : e.g. SELECT * from dbo.example;
 # |- SqlParas (tuple) : e.g. ()
 def queryBySQLcmd(sqlCmd, SqlParas)
 ```
 
+* Get Column Names From the SQL Query
+
+```python
+# params : the parameter-based sql command
+# |- sqlCmd (string) : e.g. SELECT * from dbo.example;
+# |- SqlParas (tuple) : e.g. ()
+def getColumnNames(self, sqlCmd, SqlParas)
+```
+
 * Non-Query by SQL Command : Insert, Update, Delete
 
-```py
+```python
 # params : the parameter-based sql command
 # |- sqlCmd (string) : e.g. insert into dbo.example("attr1", "attr2", "attr3") values(?, ?, ?);
 # |- SqlParas (tuple) : e.g. ('data3', 789, '2017-09-15 11:24:00')
@@ -55,7 +64,7 @@ def nonQueryBySQLCmd(sqlCmd, SqlParas)
 ### Example
 ---
 
-```py
+```python
 server = 'localhost'
 port = 1433
 database = 'Example'
@@ -81,6 +90,7 @@ if py2sqlserver.validateConnection()['state'] == "success":
         ("data1",)\
     ))
     print(py2sqlserver.queryBySQLcmd("SELECT * from dbo.example;", ()))
+    print(py2sqlserver.getColumnNames("SELECT * from dbo.example;", ()))
 ```
 
 
