@@ -2,15 +2,13 @@
 
 Provide libraries or packages for the software development in multiple programming languages.
 
-### Github
-
----
+## Github
 
 * github repository : [https://github.com/jiankaiwang/seed](https://github.com/jiankaiwang/seed)
 
-### Supported languages list
 
----
+
+## Supported languages list
 
 * Scientific
   * R : 3.2.3
@@ -53,6 +51,8 @@ Provide libraries or packages for the software development in multiple programmi
   * PostgreSQL
   * Redis
 * GIS
+* Social
+  * Line Notify
 
 
 
